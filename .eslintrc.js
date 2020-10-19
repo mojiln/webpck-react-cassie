@@ -1,5 +1,3 @@
-const OFF = 0
-const WARN = 1
 const ERROR = 2
 
 module.exports = {
@@ -47,5 +45,7 @@ module.exports = {
         js: 'never',
       },
     ],
+    '@typescript-eslint/no-var-requires': 0,
+    'import/no-extraneous-dependencies': [ERROR, { devDependencies: true }],
   },
 }
